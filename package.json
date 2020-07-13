@@ -1,0 +1,33 @@
+{
+  "name": "leason-4",
+  "version": "1.0.0",
+  "description": "1. Отсутствие состояния\r 2. Клиент - Сервер\r 3. Единообразие интерфейса\r 4. Кэширование\r 5. Слои",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pijpinki/leason-4.git"
+  },
+  "author": "Pasha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pijpinki/leason-4/issues"
+  },
+  "homepage": "https://github.com/pijpinki/leason-4#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.23",
+    "morgan": "^1.10.0",
+    "uniqid": "^5.2.0",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
