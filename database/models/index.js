@@ -1,3 +1,4 @@
 module.exports = {
-    ...require('./contacts')
+    ...require('./contacts'),
+    ...require('./users')
 };
