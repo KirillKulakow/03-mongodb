@@ -19,7 +19,7 @@ const UsersSchema = mongoose.Schema({
 
 UsersSchema.static('generateToken', function (userId) {
     const data = new Date();
-    data.setHours(data.getHours() + 1);
+    data.setHours(data.getUTCHours() + 1);
     return jwt.sign({_id: userId, expiresIn: data}, config.secretKey, {expiresIn: "1h"})
 })
 
