@@ -4,5 +4,6 @@ module.exports = {
     },
     server: {
       port: process.env.PORT,
-    }
+    },
+    secretKey: process.env.SECRET_KEY
   }
