@@ -25,7 +25,7 @@ async function main() {
     });
     
     app.use(express.json());
-
+    app.use(express.static('public'));
     app.use('/contacts', Authorize, ContactRouter);
     app.use('/auth', AuthRouter);
     app.use('/users', Authorize, UsersRouter)

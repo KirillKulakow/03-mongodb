@@ -6,7 +6,6 @@ async function authorize(req, res, next) {
     try {
       const authorizationHeader = req.get("Authorization");
       const token = authorizationHeader.replace("Bearer ", "");
-
       let userId;
       try {
         userId = await jwt.verify(token, config.secretKey)._id;
