@@ -4,7 +4,7 @@
   "description": "1. Отсутствие состояния\r 2. Клиент - Сервер\r 3. Единообразие интерфейса\r 4. Кэширование\r 5. Слои",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "nodemon ."
   },
   "repository": {
@@ -19,18 +19,26 @@
   "homepage": "https://github.com/pijpinki/leason-4#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "avatar-builder": "^1.0.1",
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.0",
     "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.1.1",
     "mongoose": "^5.9.23",
     "mongoose-paginate-v2": "^1.3.9",
     "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "should": "^13.2.3",
     "uniqid": "^5.2.0",
-    "uuid": "^8.2.0"
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "sinon": "^9.0.3"
   }
 }

@@ -4,15 +4,9 @@ const bcrypt = require('bcrypt');
 const config = require('../../config');
 
 const UsersSchema = mongoose.Schema({
-    email: { type: String, required: true, unique: true, validate: { validator: function (v) {
-        let valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        return valid.test(v);
-        }, message: props => `${props.value} is not a valid email!`, type: 'validation'}
-    },
-    password: { type: String, required: true, validate: { validator: function (v) {
-        let valid = /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
-        return valid.test(v);
-        }, message: props => `${props.value} is not a valid password (one or more number, one or more letter - upper and lower, and one of special symbol, password length is more then 6 symbol)!`, type: 'validation'} },
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+    avatarURL: { type: String },
     subscription: { type: String, enum: ["free", "pro", "premium"], default: "free"},
     token: { type: String }
 });
